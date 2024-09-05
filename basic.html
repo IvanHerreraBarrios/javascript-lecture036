@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+</head>
+
+<body>
+    <h1>Javascript basics</h1>
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>Fall</li>
+        <li>Winter</li>
+    </ul>
+    <script>
+      /*
+      console.log("Hi")
+      setTimeout(() => {
+        console.log("Running a setTimeout, 1 seg")
+      }, 3000); //1000 = 1 seg
+
+      setInterval(() => {
+        console.log("Running a setInterval, it runs indefinitely every so often")
+      }, 1000);
+      */ 
+
+      /*
+      setInterval(() => (
+        console.log(new Date().toLocaleTimeString())
+      ), 1000)
+      */  
+     /*
+     let temp = setTimeout(() => {
+      console.log(new Date().toLocaleTimeString())
+     }, 1000);
+
+     clearTimeout(temp)
+     console.log("After")
+     */  
+
+
+     let temp = setInterval(() => {
+      console.log(new Date().toLocaleTimeString())
+     }, 1000);
+
+     clearInterval(temp)
+     console.log("After")
+    </script>
+</body>
+
+</html>
